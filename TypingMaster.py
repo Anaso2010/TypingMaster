@@ -9,4 +9,4 @@ WORDS = [
 TOTAL_WORDS = 15
 words_to_type = random.sample(WORDS, TOTAL_WORDS)
 
-print(words_to_type)
+print(words_to_type)# test
