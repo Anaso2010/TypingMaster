@@ -19,3 +19,12 @@ for word in words_to_type:
         print("Correct")
     else:
         print("Incorrect")
+        mistakes += 1
+
+for i, word in enumerate(words_to_type, start=1):
+    print(f"\nWord {i}/{TOTAL_WORDS}: {word}")
+    user_input = input("Type: ")
+
+for i, word in enumerate(words_to_type, start=1):
+    print(f"\nWord {i}/{TOTAL_WORDS}: {word}")
+    user_input = input("Type: ")
