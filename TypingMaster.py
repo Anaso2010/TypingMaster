@@ -9,11 +9,11 @@ WORDS = [
 TOTAL_WORDS = 15
 words_to_type = random.sample(WORDS, TOTAL_WORDS)
 
-print(words_to_type)
-
 mistakes = 0
-for word in words_to_type:
-    user_input = input(f"Type: {word}")
+
+for i, word in enumerate(words_to_type, start=1):
+    print(f"\nWord {i}/{TOTAL_WORDS}: {word}")
+    user_input = input("Type: ")
 
     if user_input == word:
         print("Correct")
@@ -21,10 +21,11 @@ for word in words_to_type:
         print("Incorrect")
         mistakes += 1
 
-for i, word in enumerate(words_to_type, start=1):
-    print(f"\nWord {i}/{TOTAL_WORDS}: {word}")
-    user_input = input("Type: ")
+correct = TOTAL_WORDS - mistakes
+accuracy = (correct / TOTAL_WORDS) * 100
 
-for i, word in enumerate(words_to_type, start=1):
-    print(f"\nWord {i}/{TOTAL_WORDS}: {word}")
-    user_input = input("Type: ")
+print("\nGame Over!")
+print(f"Mistakes: {mistakes}")
+print(f"Accuracy: {accuracy:.2f}%")
+
+
