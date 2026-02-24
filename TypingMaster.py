@@ -14,3 +14,8 @@ print(words_to_type)
 mistakes = 0
 for word in words_to_type:
     user_input = input(f"Type: {word}")
+
+    if user_input == word:
+        print("Correct")
+    else:
+        print("Incorrect")
