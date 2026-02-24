@@ -9,4 +9,8 @@ WORDS = [
 TOTAL_WORDS = 15
 words_to_type = random.sample(WORDS, TOTAL_WORDS)
 
-print(words_to_type)# test
+print(words_to_type)
+
+mistakes = 0
+for word in words_to_type:
+    user_input = input(f"Type: {word}")
